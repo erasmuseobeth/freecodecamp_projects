@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Cyber330d Survey Form</h1>
+    <p id="description">Thank you for taking the time to help me improve my skills</p>
+
+    <form id="survey-form" action="" method="POST">
+
+      <fieldset>
+      <label for="name" id="name-label">Name 
+      <input type="text" id="name" placeholder="Enter Your Name" required />
+      </label>
+
+      <label for="email" id="email-label">Email 
+      <input type="email" id="email" required pattern="[a-z0-5]{8,}{a-z@a-z.a-z}" placeholder="Enter Your Email" />
+
+      </label>
+      <label for="number" id="number-label">Age (optional)
+      <input type="number" id="number" required pattern="[0-9]" min="16" max="100" placeholder="Age"/>
+      </label>
+      </fieldset>
+
+<fieldset>
+  <label for="dropdown">Which options best describes your current role?
+<select id="dropdown">
+   <option value="not-selected">Select current role</option>
+   <option value="contractor">Contractor</option>
+   <option value="client">Client</option>
+   <option value="Recruiter">Recruiter</option>
+   <option value="Hiring-manager">Hiring Maneger</option>
+   <option value="others">Others</option>
+</select>
+</label>
+</fieldset>
+
+<fieldset>
+  <label for="dropdown">Would you recommend cyber330d to you Friends or Organization? 
+  <label for="will-recommend">
+<input type="radio" name="recommendation" id="will-recommend" value="will-recommend" />
+ Definitely</label>
+
+
+
+  <label for="not-sure-recommendation">
+<input type="radio" name="recommendation" value="not-sure" id="not-sure-recemmendation" />
+ Maybe</label>
+
+  <label for="no-recomendation">
+<input type="radio" name="recommendation" id="no-recommendation"  value="no-recommendation" />
+ Not Sure</label>
+
+</label>
+</fieldset>
+
+<fieldset>
+  <label for="dropdown2">What is your favourite feature on Cyber330d Platform?
+<select id="dropdown2">
+   <option value="not-selected">Select an option</option>
+   <option value="projects">Projects</option>
+   <option value=""styling">Styling</option>
+   <option value="layout">Page Layout</option>
+   <option value="motion">Motion, Animation, Scrolling</option>
+</select>
+</label>
+</fieldset>
+
+<fieldset>
+   <label for="">What will you like me to improve on my platform?
+  <input type="checkbox"  value="frontend"/>Front-end Projects
+  <input type="checkbox"  value="backend"/>Back-end Projects
+  <input type="checkbox"  value="intergration"/>Intergration
+  <input type="checkbox"  value="challenges"/>Challenges
+  <input type="checkbox"  value="open-source"/>Open Source Engagement
+  <input type="checkbox"  value="contact"/>Contact
+  <input type="checkbox"  value="css"/>Css
+  <input type="checkbox"  value="html"/>HTML
+  <input type="checkbox"  value="javascript"/>Javascript
+  <input type="checkbox"  value="animation"/>Animation
+  <input type="checkbox"  value="ux"/>UX
+  <input type="checkbox"  value="colors"/>Colors
+  <input type="checkbox"  value="back"/>Back-end Projects
+
+ </label>
+
+</fieldset>
+<label for="comment"> Any comments or sugggestions?
+<textarea id="comment" name="bio" rows="5" cols="60" placeholder="Enter your comment here...">
+
+</textarea>
+<input type="submit" id="submit" value="Submit"/>
+</form>
+  </body>
+</html>
