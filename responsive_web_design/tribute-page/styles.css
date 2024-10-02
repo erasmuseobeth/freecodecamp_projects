@@ -45,11 +45,16 @@ html {
   img {
     max-width: 100%;
     display: block;
-    height: auto;
-    width: 70vw;
     max-height: 80vh;
+    /* height: auto; */
+    width: 70vw;
+    
     margin: 0 auto;
   }
+
+  #image
+  {  height: auto;
+  border:4px red;}
   
   #img-div {
     background: white;
